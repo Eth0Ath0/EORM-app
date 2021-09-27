@@ -1,0 +1,38 @@
+<div class="card border-primary mb-3">
+  <div class="card-header">Estudiantes</div>
+
+  <div class="card-body text-primary">
+    <h5 class="card-title">Listado de estudiantes</h5>
+  <table class='table  table-bordered table-striped'>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Nombres</th>
+        <th>Apellidos</th>
+        <th>Fecha Nacimiento</th>
+        <th>Edad</th>
+        <th>Sexo</th>
+        <th>Idioma</th>
+        <th>Lateralidad</th>
+        <th>Direccion</th>
+        <th>Observaciones</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let estudiante of estudiantes">
+        <td>{{estudiante.codigo_personal}}</td>
+        <td>{{estudiante.nombres_estudiante}}</td>
+        <td>{{estudiante.apellidos_estudiante}}</td>
+        <td>{{estudiante.fecha_nacimiento}}</td>
+        <td>{{estudiante.edad_estudiante}}</td>
+        <td>{{estudiante.sexo_estudiante}}</td>
+        <td>{{estudiante.idioma_estudiante}}</td>
+        <td>{{estudiante.lateralidad_estudiante}}</td>
+        <td>{{estudiante.direccion_estudiante}}</td>
+        <td>{{estudiante.observacion}}</td>
+      </tr>
+    </tbody>
+    </table>
+  </div>
+</div>
